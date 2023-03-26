@@ -1,0 +1,72 @@
+%allColor {
+  border: 0;
+  color: white;
+  font-weight: 600;
+  opacity: 0.5;
+}
+.darkmode{
+  background-image: linear-gradient(1000deg, #000000 0%, #434343 100%);
+  color: white;
+}
+body {
+  background-image: linear-gradient(1000deg, #a6c0fe 0%, #f68084 100%);
+  margin: 0;
+  font-family: 'Climate Crisis', cursive;
+
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    .time {
+      position: absolute;
+      @extend %allColor;
+      text-align: center;
+      font-size: 25px;
+      top: 30%;
+    }
+    .modebtn {
+      margin-top: 50px;
+      border: 0;
+      color: #a6c0fe;
+      background-color:transparent;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .content {
+      position: absolute;
+      top: 40%;
+      width: 500px;
+      height: 400px;
+      text-align: center;
+      background-color:rgba(237, 106, 106, 0.5);
+      border-radius: 10px;
+
+          .contentText{
+          text-align: center;
+
+          .todo {
+            text-align: center;
+            border: 0;
+            border-radius: 5px;
+          }
+            .inputBtn{
+              background-color: white;
+              border: 0;
+              font-size: 12px;
+              border-radius: 5px;
+            }
+        }
+      .contentView {
+        margin-top: 20px;
+        text-align: center;
+
+      }
+    }
+  }
+}
+
+
