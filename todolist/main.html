@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css" />
 
   </head>
   <body>
     
     <div class="main">
+      <img class="sunModeBtn" src="images/sun.png" alt="">
+      <img class="darkModeBtn" src="images/moon.png" alt="">
       <div class="time">TIME</div>
-      <button class="modebtn">MODE</button>
-
-      <div class="content">
+      <div class="scrollQ animate__animated animate__fadeInDown">
+        <p>Scroll<br>내려주세요!</p>
+      </div>
+      <div class="content animate__animated animate__fadeInDown">
           <div class="contentTitle">Title</div>
           
         <div class="contentText">
           <input class="todo" type="text" value="입력해주세요." />
           <button class="inputBtn">CLICK</button>
         </div>
-      
+        
         <div class="contentView">ay</div>
         </div>
     </div>
 
+    <div style="height: 700px;"></div>
 
-
-    <script src="../todolist/mainjs/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

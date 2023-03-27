@@ -10,6 +10,10 @@ body .main .time {
   color: white;
 }
 
+.viewnone {
+  display: none;
+}
+
 body {
   background-image: linear-gradient(1000deg, #a6c0fe 0%, #f68084 100%);
   margin: 0;
@@ -20,6 +24,7 @@ body .main {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  transition: all 1s;
 }
 body .main .time {
   position: absolute;
@@ -27,13 +32,22 @@ body .main .time {
   font-size: 25px;
   top: 30%;
 }
-body .main .modebtn {
-  margin-top: 50px;
-  border: 0;
-  color: #a6c0fe;
-  background-color: transparent;
-  font-size: 20px;
-  font-weight: 600;
+body .main .scrollQ {
+  text-align: center;
+  margin-top: 20%;
+}
+body .main .sunModeBtn {
+  position: relative;
+  top: 40px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+}
+body .main .darkModeBtn {
+  position: relative;
+  right: 30px;
+  width: 40px;
+  height: 40px;
 }
 body .main .content {
   position: absolute;
@@ -43,6 +57,7 @@ body .main .content {
   text-align: center;
   background-color: rgba(237, 106, 106, 0.5);
   border-radius: 10px;
+  display: none;
 }
 body .main .content .contentText {
   text-align: center;
