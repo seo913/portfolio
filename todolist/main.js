@@ -66,7 +66,7 @@ window.addEventListener('scroll',function(){
 inputBtn.addEventListener('click',function(){
     let list = document.createElement('li'); //리스트생성
     if(todo.value == ""){
-        alert('할 일을 입력해주세요!');
+        alert('할 일을 입력 해주세요!');
     }else{
     list.innerText = todo.value; //할일 입력
     contentView.appendChild(list); //리스트를 할일 자식 붙이기
