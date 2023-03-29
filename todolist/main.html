@@ -6,35 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-
   </head>
-  <body>
-    
+  <body style="height: 680px">
     <div class="main">
-      <img class="sunModeBtn" src="images/sun.png" alt="">
-      <img class="darkModeBtn" src="images/moon.png" alt="">
+      <img class="sunModeBtn" src="images/sun.png" alt="" />
+      <img class="darkModeBtn" src="images/moon.png" alt="" />
       <div class="time">TIME</div>
       <div class="scrollQ animate__animated animate__fadeInDown">
         <p>Scroll<br>내려주세요!</p>
       </div>
+      <div class="scrollB animate__animated animate__fadeInDown">
+        <p>Scroll<br>올려주세요!</p>
+      </div>
       <div class="content animate__animated animate__fadeInDown">
-          <div class="contentTitle">Title</div>
-          
+        <div class="contentTitle">오늘의 할 일은?</div>
         <div class="contentText">
-          <input class="todo" type="text" value="입력해주세요." />
-          <button class="inputBtn">CLICK</button>
+          <input class="todo" type="text" value="" />
+          <button class="inputBtn">+</button>
         </div>
-        
-        <div class="contentView">ay</div>
-        </div>
+        <div class="contentView"></div>
+      </div>
+
+      <button class="weatherBtn">
+        오늘 날씨 보기
+      </button>
+
+      <div class="weather">
+      <div >
+        <img
+          class="weatherIcon"
+          src=""
+          alt=""
+        />
+      </div>
+      <div class="weatherTemp"></div>
+      <div class="weatherhumidity"></div>
+      <div class="weatherspeed"></div>
     </div>
 
-    <div style="height: 700px;"></div>
+    <!-- <button class="chatTitle">무엇이든 물어보세요!</button>
 
+      <div class="chatMain">
+          <div class="chatView">
+          <input class='chatInput' type="text">
+          <button class="chatBtn">검색</button>
+          <div class="chatOk">sadf</div>
+          <button class="close1">나가기</button>
+          </div>
+      </div> -->
+
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

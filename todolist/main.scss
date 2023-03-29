@@ -4,40 +4,61 @@
   font-weight: 600;
   opacity: 0.5;
 }
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .darkmode{
   background-image: linear-gradient(1000deg, #000000 0%, #434343 100%);
   color: white;
   
 } 
 
-.viewnone{
-  display: none;
+
+li{
+  list-style: none;
 }
 
 body {
   background-image: linear-gradient(1000deg, #a6c0fe 0%, #f68084 100%);
   margin: 0;
-  font-family: 'Climate Crisis', cursive;
-
+  font-family: 'Nanum Brush Script', cursive;
+  user-select: none;
+  
   .main {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    transition: all 1s;
-
-
+    
     .time {
       position: absolute;
       @extend %allColor;
       text-align: center;
-      font-size: 25px;
+      font-size: 45px;
       top: 30%;
-      
+      padding: 5px 10px;
     }
     .scrollQ{
       text-align: center;
       margin-top: 20%;
+      font-size: 25px;
+    }
+
+    .scrollB{
+      position: absolute;
+      text-align: center;
+      margin-top: 0%; 
+      top: 70%;
+      display: none;
+      font-size: 25px;
+
     }
     .sunModeBtn {
       position: relative;
@@ -46,11 +67,19 @@ body {
       width: 40px;
       height: 40px;
     }
+    .sunModeBtn:hover{
+            animation: spin 5s linear infinite;
+
+    }
     .darkModeBtn{
       position: relative;
       right: 30px;
       width: 40px;
       height: 40px;
+    }
+    .darkModeBtn:hover{
+            animation: spin 5s linear infinite;
+
     }
 
     .content {
@@ -59,9 +88,13 @@ body {
       width: 500px;
       height: 400px;
       text-align: center;
-      background-color:rgba(237, 106, 106, 0.5);
+      background-color:rgba(199, 199, 199, 0.5);
       border-radius: 10px;
       display: none;
+      font-size: 20px;
+          .contentTitle{
+            margin: 10px;
+          }
           .contentText{
           text-align: center;
 
@@ -69,11 +102,12 @@ body {
             text-align: center;
             border: 0;
             border-radius: 5px;
+            outline-color: #f68084;
           }
             .inputBtn{
               background-color: white;
               border: 0;
-              font-size: 12px;
+              font-size: 15px;
               border-radius: 5px;
             }
         }
@@ -83,7 +117,82 @@ body {
 
       }
     }
-  }
+
+    .weatherBtn{
+      position: absolute;
+      left: 11%;
+      bottom: 45%;
+      border: 0;
+      border-radius: 10px;
+      background-color: rgba(199, 199, 199, 0.5);
+      font-size: 25px;
+      padding: 5px 15px;
+      color: white;
+      font-family: 'Nanum Brush Script', cursive;
+
+    }
+    .weather{
+      position: absolute;
+      left: 10%;
+      bottom: 35%;
+      display: none;
+      text-align: center;
+      border-radius: 10px;
+      background-color: rgba(199, 199, 199, 0.5);
+      padding: 0px 8px 5px 8px;
+      font-size: 20px;
+
+      .weatherTemp{
+        margin-top: -20px;
+        
+      }
+      
+    }
+
+
+    .chatTitle{
+      position: absolute;
+      right: 10%;
+      bottom: 45%;
+      border: 0;
+      border-radius: 10px;
+      background-color: rgba(199, 199, 199, 0.5);
+      font-size: 25px;
+      font-weight: 600; 
+      padding: 5px 15px;
+      color: white;
+      font-family: 'Nanum Brush Script', cursive;
+      }
+
+    .chatMain{
+      position: absolute;
+      right: 5%;
+      top: 40%;
+      text-align: center;
+      display: none;
+        .chatInput{
+          margin-top: 10px;
+        }
+        .chatView{
+          width: 300px;
+          height: 300px;
+          background-color: rgba(199, 199, 199, 0.5);
+          border-radius: 10px;
+          text-align: center;
+
+          .close{
+          margin-top: 220px;
+          }
+          }
+        }
+
+    .viewblock{
+      display: block;
+    } 
+    .viewnone{
+      display: none;
+    }
+  } 
 }
 
 

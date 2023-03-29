@@ -5,36 +5,54 @@ body .main .time {
   opacity: 0.5;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .darkmode {
   background-image: linear-gradient(1000deg, #000000 0%, #434343 100%);
   color: white;
 }
 
-.viewnone {
-  display: none;
+li {
+  list-style: none;
 }
 
 body {
   background-image: linear-gradient(1000deg, #a6c0fe 0%, #f68084 100%);
   margin: 0;
-  font-family: "Climate Crisis", cursive;
+  font-family: "Nanum Brush Script", cursive;
+  user-select: none;
 }
 body .main {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  transition: all 1s;
 }
 body .main .time {
   position: absolute;
   text-align: center;
-  font-size: 25px;
+  font-size: 45px;
   top: 30%;
+  padding: 5px 10px;
 }
 body .main .scrollQ {
   text-align: center;
   margin-top: 20%;
+  font-size: 25px;
+}
+body .main .scrollB {
+  position: absolute;
+  text-align: center;
+  margin-top: 0%;
+  top: 70%;
+  display: none;
+  font-size: 25px;
 }
 body .main .sunModeBtn {
   position: relative;
@@ -43,11 +61,17 @@ body .main .sunModeBtn {
   width: 40px;
   height: 40px;
 }
+body .main .sunModeBtn:hover {
+  animation: spin 5s linear infinite;
+}
 body .main .darkModeBtn {
   position: relative;
   right: 30px;
   width: 40px;
   height: 40px;
+}
+body .main .darkModeBtn:hover {
+  animation: spin 5s linear infinite;
 }
 body .main .content {
   position: absolute;
@@ -55,9 +79,13 @@ body .main .content {
   width: 500px;
   height: 400px;
   text-align: center;
-  background-color: rgba(237, 106, 106, 0.5);
+  background-color: rgba(199, 199, 199, 0.5);
   border-radius: 10px;
   display: none;
+  font-size: 20px;
+}
+body .main .content .contentTitle {
+  margin: 10px;
 }
 body .main .content .contentText {
   text-align: center;
@@ -66,16 +94,82 @@ body .main .content .contentText .todo {
   text-align: center;
   border: 0;
   border-radius: 5px;
+  outline-color: #f68084;
 }
 body .main .content .contentText .inputBtn {
   background-color: white;
   border: 0;
-  font-size: 12px;
+  font-size: 15px;
   border-radius: 5px;
 }
 body .main .content .contentView {
   margin-top: 20px;
   text-align: center;
+}
+body .main .weatherBtn {
+  position: absolute;
+  left: 11%;
+  bottom: 45%;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgba(199, 199, 199, 0.5);
+  font-size: 25px;
+  padding: 5px 15px;
+  color: white;
+  font-family: "Nanum Brush Script", cursive;
+}
+body .main .weather {
+  position: absolute;
+  left: 10%;
+  bottom: 35%;
+  display: none;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(199, 199, 199, 0.5);
+  padding: 0px 8px 5px 8px;
+  font-size: 20px;
+}
+body .main .weather .weatherTemp {
+  margin-top: -20px;
+}
+body .main .chatTitle {
+  position: absolute;
+  right: 10%;
+  bottom: 45%;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgba(199, 199, 199, 0.5);
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px 15px;
+  color: white;
+  font-family: "Nanum Brush Script", cursive;
+}
+body .main .chatMain {
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  text-align: center;
+  display: none;
+}
+body .main .chatMain .chatInput {
+  margin-top: 10px;
+}
+body .main .chatMain .chatView {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(199, 199, 199, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+body .main .chatMain .chatView .close {
+  margin-top: 220px;
+}
+body .main .viewblock {
+  display: block;
+}
+body .main .viewnone {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
