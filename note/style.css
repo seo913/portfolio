@@ -1,0 +1,147 @@
+body {
+  background-color: rgb(78, 78, 78);
+  margin: 0;
+  color: white;
+}
+body main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body .content {
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 241, 147);
+  width: 400px;
+  height: 300px;
+}
+@media (min-width: 786px) {
+  body .content {
+    width: 600px;
+    height: 400px;
+  }
+}
+body .content .notename {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: -20px;
+}
+@media (min-width: 786px) {
+  body .content .notename {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+}
+body .content .contentTitleBox {
+  margin-top: 20px;
+  text-align: center;
+}
+body .content .contentTitleBox .textTitle {
+  width: 300px;
+}
+@media (min-width: 786px) {
+  body .content .contentTitleBox .textTitle {
+    width: 500px;
+  }
+}
+body .content .contentTextBox {
+  text-align: center;
+  margin-top: 20px;
+}
+body .content .contentTextBox .textBox {
+  width: 300px;
+  height: 150px;
+}
+@media (min-width: 786px) {
+  body .content .contentTextBox .textBox {
+    width: 500px;
+    height: 250px;
+  }
+}
+body .content .backBtn {
+  position: absolute;
+  top: 85%;
+  left: 12%;
+}
+@media (min-width: 786px) {
+  body .content .backBtn {
+    top: 90%;
+    left: 8%;
+  }
+}
+body .content .okBtn {
+  position: absolute;
+  top: 85%;
+  right: 12%;
+}
+@media (min-width: 786px) {
+  body .content .okBtn {
+    top: 90%;
+    right: 8%;
+  }
+}
+body .viewContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+body .viewContent .content {
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 241, 147);
+  width: 400px;
+  height: 300px;
+}
+body .viewContent .content .view1 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 500px;
+  height: 150px;
+  background-color: gray;
+}
+body .viewContent .content .createNoteBtn {
+  position: absolute;
+  top: 85%;
+  right: 12%;
+}
+@media (min-width: 786px) {
+  body .viewContent .content .createNoteBtn {
+    top: 90%;
+    right: 8%;
+  }
+}
+@media (min-width: 786px) {
+  body .viewContent .content {
+    width: 600px;
+    height: 400px;
+  }
+  body .viewContent .content .notename {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: -20px;
+  }
+}
+@media (min-width: 786px) and (min-width: 786px) {
+  body .viewContent .content .notename {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

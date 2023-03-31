@@ -1,0 +1,138 @@
+@import 'app.scss';
+
+body {
+  background-color: rgb(78, 78, 78);
+  margin: 0;
+  color: white;
+  @include responsive('tablet') {
+  }
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .content {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 241, 147);
+    width: 400px;
+    height: 300px;
+    // z-index: 9999;
+    //  display: none;
+    @include responsive('tablet') {
+      width: 600px;
+      height: 400px;
+    }
+
+    .notename {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: -20px;
+      @include responsive('tablet') {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: -20px;
+      }
+    }
+    .contentTitleBox {
+      margin-top: 20px;
+      text-align: center;
+
+      .textTitle {
+        width: 300px;
+        @include responsive('tablet') {
+          width: 500px;
+        }
+      }
+    }
+    .contentTextBox {
+      text-align: center;
+      margin-top: 20px;
+      .textBox {
+        width: 300px;
+        height: 150px;
+        @include responsive('tablet') {
+          width: 500px;
+          height: 250px;
+        }
+      }
+    }
+    .backBtn {
+      position: absolute;
+      top: 85%;
+      left: 12%;
+      @include responsive('tablet') {
+        top: 90%;
+        left: 8%;
+      }
+    }
+    .okBtn {
+      position: absolute;
+      top: 85%;
+      right: 12%;
+      @include responsive('tablet') {
+        top: 90%;
+        right: 8%;
+      }
+    }
+  }
+
+  .viewContent {
+    // max-width: 1280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: none;
+    .content {
+      position: absolute;
+      top: 100px;
+      left: 350px;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: rgb(255, 241, 147);
+      width: 400px;
+      height: 300px;
+
+      .view1 {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        width: 500px;
+        height: 150px;
+        background-color: gray;
+      }
+      .createNoteBtn {
+        position: absolute;
+        top: 85%;
+        right: 12%;
+        @include responsive('tablet') {
+          top: 90%;
+          right: 8%;
+        }
+      }
+      @include responsive('tablet') {
+        width: 600px;
+        height: 400px;
+        .notename {
+          margin-top: 20px;
+          text-align: center;
+          font-size: 20px;
+          margin-bottom: -20px;
+          @include responsive('tablet') {
+            font-size: 30px;
+            margin-top: 10px;
+            margin-bottom: -20px;
+          }
+        }
+      }
+    }
+  }
+}
